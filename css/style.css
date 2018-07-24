@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Dancing+Script');
+body,html{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-family: 'Dancing Script', cursive;
+}
+h4{
+  font-family: 'Abel', sans-serif;
+}
+
+h1,h4{
+  text-align: center;
+  color:#535353;
+}
+
+body{
+  background-color:#f8f8f8;
+}
+
+.container{
+  position: relative;
+  left:0;
+  right: 0;
+  top:5%;
+  bottom:0;
+  margin:auto;
+  display:table;
+}
+
+.row{
+  padding:5% 5%;
+  height: auto;
+}
+
+.row h1{
+  font-size:72px;
+}
+
+.row h4{
+  font-size:24px;
+  color:#999999;
+  margin-top:20px;
+}
+
+.row img{
+  height: 20%;
+  width:30%;
+}
+
+.header,.bar{
+  text-align: center;
+}
+
+.bar{
+  padding:0;
+  margin:5px auto;
+  border: #d4d4d4 1px solid;
+  background:#f9f9f9;
+  max-height: 150px;
+}
+
+.tables{
+  margin:25px auto;
+  height: auto;
+  border: #d4d4d4 1px solid;
+  background:#f9f9f9;
+}
+
+/* [Upload Bar] */
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+    text-align: center;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+/*desing*/
+.inputfile-type + label {
+    color: #d3394c;
+}
+
+.inputfile-type + label {
+    border: 1px solid #d3394c;
+    background-color: #f1e5e6;
+    padding: 0;
+}
+
+.inputfile-type:focus + label,
+.inputfile-type.has-focus + label,
+.inputfile-type + label:hover {
+    border-color: #722040;
+}
+
+.inputfile-type + label span,
+.inputfile-type + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.inputfile-type + label span {
+    width: 45vw;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-type + label strong {
+    height: 100%;
+    color: #f1e5e6;
+    font-family: OpenSans-Regular;
+    background-color: #d3394c;
+    display: inline-block;
+}
+
+.inputfile-type:focus + label strong,
+.inputfile-type.has-focus + label strong,
+.inputfile-type + label:hover strong {
+    background-color: #722040;
+}
+
+@media screen and (max-width: 50em) {
+	.inputfile-type + label strong {
+		display: block;
+	}
+}
+
+/* [Upload Bar END] */
+
+
+/*[ TABLE ]*/
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table th{
+  border:2px solid #FA4626;
+}
+table thead tr {
+  height: 60px;
+  background: #FA4626;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+table th.resizing {
+    cursor: col-resize;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+.table100-head th{
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+  text-align: center;
+  cursor: col-resize;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1,.column2,.column3,.column4{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.column1 {
+  width: 150px;
+  padding-left: 25px;
+}
+
+.column2 {
+  width: 400px;
+}
+
+.column3 {
+  max-width: 50px;
+}
+
+.column4 {
+  width: 50px;
+  text-align: center;
+  padding-right: 25px;
+}
+
+/*992*/
+@media screen and (max-width: 402px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Date";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Order ID";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Total";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*TABLE END*/
