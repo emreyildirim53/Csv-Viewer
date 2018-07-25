@@ -13,6 +13,6 @@ Uygulama sayfası belirli data formatı için tasarlanmıştır. Kendi veri form
 
 [![interface](img/1.png "Interface")]()
 
-- **Seçilen *.csv dosyasının uygunluğuna göre (Format uygunsuzsa hata mesajı gösterilmektedir.) veriler "index.html" içerisinde girilen tablo sütun başlıklarına göre listelenmektedir.**
+- **Seçilen .csv dosyasının uygunluğuna göre (Format uygunsuzsa hata mesajı gösterilmektedir.) veriler "index.html" içerisinde girilen tablo sütun başlıklarına göre listelenmektedir.**
 
 [![interface](img/2.png "Interface")]()
