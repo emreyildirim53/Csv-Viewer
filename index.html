@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
   <meta name="description" content="Sosyal Yaratıcılık Başlıyor.">
-  <meta name="keywords" content="Videa, Yaratıcılık, Yarışma, Sosyal, Reklam, Blog">
+  <meta name="keywords" content="Videa, Yaratıcılık, Yarışma, Sosyal, Reklam, Blog, Veri, Görselleştirme">
   <link rel="icon" href="img/videa_icon.png" type="image/gif">
-  <title>Videa Veri Görselleştirme</title>
 
   <!--Style Files-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,44 +25,85 @@
 
     <div class="row header">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <img src="img/logo-template.png" alt="">
-        <h1>Csv Viewer</h1>
-        <h4>This text is the definition part of the project!</h4>
+        <img src="img/logo.png" alt="">
+        <h1>Veri Görselleştirme</h1>
+        <h4>Videa'ya ait verilerin görsellestirilmesi için kullanılmaktadır.</h4>
       </div>
     </div>
 
+    <div class="row cards">
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card network">
+            <img src="img/networkanalysis.png" alt="Avatar" style="width:100%">
+            <div class="title">
+              <h4><b>Network Analysis</b></h4>
+              <p>Kelimelerin birbiriyle ilişkisi gözlemlenir.</p>
+            </div>
+            <div class="uploadNetwork">
+              <button type="button" name="button">Yükle</button>
+            </div>
+            <div class="triangle"><span class="glyphicon glyphicon-share"></span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card bubble">
+            <img src="img/bubblechart.png" alt="Avatar" style="width:100%">
+            <div class="title">
+              <h4><b>Bubble Chart</b></h4>
+              <p>Sınıfların hiyerarşik yapısı gözlemlenir.</p>
+            </div>
+            <div class="uploadBubble">
+              <button type="button" name="button">Yükle</button>
+            </div>
+            <div class="triangle"><span class="glyphicon glyphicon-share"></span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card word">
+            <img src="img/wordcloud.png" alt="Avatar" style="width:100%">
+            <div class="title">
+              <h4><b>Word Cloud</b></h4>
+              <p>Kelime frekansı gözlemlenir.</p>
+            </div>
+            <div class="uploadWord">
+              <button type="button" name="button">Yükle</button>
+            </div>
+            <div class="triangle"><span class="glyphicon glyphicon-share"></span></div>
+          </div>
+        </div>
+    </div>
+
     <div class="row bar">
-      <div class="row">
+      <div class="row upfile">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <span class="message"></span>
-  					<input type="file" name="file" id="file" class="inputfile inputfile-type" data-multiple-caption="{count} files selected" accept=".csv">
-  					<label for="file"><span></span> <strong><svg width="20" height="17" ></svg> Choose a file…</strong></label>
+  					<input type="file" name="file" id="file" class="inputfile inputfile-type" data-multiple-caption="{count} dosya seçildi." accept=".csv" multiple>
+  					<label for="file"><span></span> <strong><svg width="20" height="17" ></svg> Dosya Seçiniz... </strong></label>
+        </div>
+      </div>
+      <div class="row tags">
+        <div class="col-lg-12 col-md-12 col-sm-12 tagsCols">
         </div>
       </div>
     </div>
 
     <div class="row tables">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-
-  					<table>
-  						<thead>
-  							<tr class="table100-head">
-  								<th class="column1">Başlık</th>
-  								<th class="column2">İçerik</th>
-  								<th class="column3">Kelimeler</th>
-  								<th class="column4">Betweenness</th>
-  							</tr>
-  						</thead>
-  						<tbody>
-  						</tbody>
-  					</table>
-
+      <div class="col-lg-12 col-md-12 col-sm-12">
+				<table>
+					<thead>
+					</thead>
+					<tbody></tbody>
+				</table>
       </div>
     </div>
+
   </div>
 
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
 </body>
 
 </html>
